@@ -11,7 +11,7 @@
       <div class="header__logo">Недвижимость</div>
       <nav class="header__nav">
         <a href="#" class="header__link">Главная</a>
-        <a href="#" class="header__link">О нас</a>
+        <a href="#" class="header__link">О&nbsp;нас</a>
         <a href="#" class="header__link">Контакты</a>
       </nav>
     </header>
@@ -23,7 +23,8 @@
           <h3 class="intro__subtitle">Покупка домов и бизнес-центров</h3>
           <ul class="intro__list">
             <li class="intro__item">
-              Инвестиции&nbsp;от&nbsp;<span class="intro__item-span">$10&nbsp;000</span
+              Инвестиции&nbsp;от&nbsp;<span class="intro__item-span"
+                >$10&nbsp;000</span
               >&nbsp;с высокой доходностью
             </li>
             <li class="intro__item">
@@ -37,7 +38,11 @@
           </ul>
           <button class="intro__button">Сотрудничать</button>
         </div>
-        <img src="./img/building-1.jpeg" alt="building" class="intro__image img__global" />
+        <img
+          src="./img/building-1.jpeg"
+          alt="building"
+          class="intro__image img__global"
+        />
       </section>
 
       <section class="middle-block center">
@@ -51,37 +56,100 @@
           alt="Картинка 2"
           class="middle-block__image middle-block__image--right img__global"
         />
+
         <div class="midle-block__content">
-            <ul class="middle-block__list">
-              <li class="middle-block__item">
-                Наши проекты обладают уникальной архитектурой, которая выделяет их
-                на фоне других застройщиков и привлекает внимание покупателей.
-              </li>
-              <li class="middle-block__item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, adipisci.</li>
-              <li class="middle-block__item">
-                Безопасность и комфорт на высшем уровне.
-              </li>
-              <li class="middle-block__item">Гибкая система оплаты.</li>
-            </ul>
-            <button class="middle-block__button">Узнать больше</button>
+          <ul class="middle-block__list">
+            <li class="middle-block__item">
+              Наши проекты обладают уникальной архитектурой, которая выделяет их
+              на фоне других застройщиков и привлекает внимание покупателей.
+            </li>
+            <li class="middle-block__item">
+              Мы предлагаем современные и стильные решения, которые
+              удовлетворяют потребности самых требовательных клиентов.
+            </li>
+            <li class="middle-block__item">
+              Безопасность и комфорт на высшем уровне.
+            </li>
+            <li class="middle-block__item">Гибкая система оплаты.</li>
+          </ul>
+          <button class="middle-block__button">Узнать больше</button>
+        </div>
+      </section>
+
+      <section class="center">
+        <div class="form-block">
+          <div
+            class="form-block__background form-block__background--left"
+          ></div>
+          <div
+            class="form-block__background form-block__background--right"
+          ></div>
+          <form class="form-block__form">
+            <h2 class="form-block__title">Оставить заявку</h2>
+            <label class="form-block__label" for="name"></label>
+            <input
+              type="text"
+              id="name"
+              class="form-block__input"
+              name="name"
+              placeholder="Введите ваше имя"
+            />
+            <label class="form-block__label" for="email"></label>
+            <input
+              type="email"
+              id="email"
+              class="form-block__input"
+              name="email"
+              placeholder="Введите ваш email"
+            />
+            <div class="form-block__checkbox-group">
+              <input
+                type="checkbox"
+                id="agreement"
+                class="form-block__checkbox"
+                name="agreement"
+              />
+              <label for="agreement" class="form-block__checkbox-label"
+                >Я согласен с условиями</label
+              >
+            </div>
+            <button type="submit" class="form-block__button">Отправить</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__logo">Лого</div>
-      <p class="footer__copyright">© 2024, Copyright.</p>
-      <div class="footer__socials">
-        <a href="#" class="footer__icon">Иконка 1</a>
-        <a href="#" class="footer__icon">Иконка 2</a>
-        <a href="#" class="footer__icon">Иконка 3</a>
-        <a href="#" class="footer__icon">Иконка 4</a>
-        <a href="#" class="footer__icon">Иконка 5</a>
-        <a href="#" class="footer__icon">Иконка 6</a>
-      </div>
+      <!-- Блок с ссылками -->
       <div class="footer__links">
+        <a href="#" class="footer__link">Link 1</a>
+        <a href="#" class="footer__link">Link 2</a>
+        <a href="#" class="footer__link">Link 3</a>
+      </div>
+
+      <!-- Блок с логотипом и копирайтом -->
+      <div class="footer__top">
+        <div class="footer__logo">Лого</div>
+        <p class="footer__copyright">© 2024, Copyright.</p>
+      </div>
+
+      <!-- Блок с социальными иконками -->
+      <div class="footer__socials">
+        <a href="#" class="footer__icon"></a>
+        <a href="#" class="footer__icon"></a>
+        <a href="#" class="footer__icon"></a>
+        <a href="#" class="footer__icon"></a>
+        <a href="#" class="footer__icon"></a>
+        <a href="#" class="footer__icon"></a>
+      </div>
+
+      <!-- Нижний блок с политиками -->
+      <div class="footer__bottom">
         <a href="#" class="footer__link">Privacy Policy</a>
-        <a href="#" class="footer__link">Terms of Use</a>
+        <div class="footer__terms">
+          <button class="footer__button">Button</button>
+          <a href="#" class="footer__link">Terms of Use</a>
+        </div>
       </div>
     </footer>
   </body>
