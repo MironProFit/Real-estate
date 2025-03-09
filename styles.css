@@ -1,5 +1,6 @@
 :root {
   --primary-color: #222222;
+  --primary-color-transparent: rgba(34, 34, 34, 0);
   --secondary-color: #282829;
   --accent-color: #d5c9be;
   --title-input-color: #38535d;
@@ -126,12 +127,16 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-transparent);
   color: var(--main-color);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   z-index: 1000;
+  transition: background-color var(--primary-trasition);
+}
+.scrolled {
+  background-color: var(--primary-color);
 }
 
 .header__logo {
@@ -147,11 +152,36 @@ body {
 }
 
 .header__link {
+  position: relative;
   font-family: var(--secondary-font);
   font-style: italic;
   color: var(--main-color);
   text-decoration: none;
+  transition: var(--primary-trasition);
 }
+
+
+.header__link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header__link:hover {
+  color: var(--accent-color);
+  
+}
+
+.header__link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 
 /* Адаптивные стили для блока header */
 
@@ -585,7 +615,7 @@ body {
 
 @media (min-width: 1920px) and (max-width: 4000px) {
   .form-block__background--right {
-    width: clamp(25%, 30vw, 150%);
+    width: clamp(35%, 20vw, 150%);
   }
 }
 
@@ -609,12 +639,13 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1440px) {
   .form-block__background--right {
-    width: clamp(100%, 20vw, 150%);
+    width: clamp(78%, 20vw, 150%);
   }
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
   .form-block__background--right {
+    right: -18px;
     width: clamp(125%, 20vw, 150%);
   }
   .form-block__background--left {
